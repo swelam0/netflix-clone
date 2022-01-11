@@ -17,6 +17,11 @@ const Image = styled.div`
 	img {
 		width: 100%;
 	}
+
+	@media (max-width: 992px) {
+		width: 100%;
+		margin-right: 20px;
+	}
 `
 
 export default Logo

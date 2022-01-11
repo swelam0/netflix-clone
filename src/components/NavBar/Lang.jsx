@@ -29,7 +29,7 @@ const LangBtn = styled.div`
 
 	& > div {
 		font-size: 16px;
-		border: 1px solid white;
+		border: 0.5px solid rgba(255, 255, 255, 0.5);
 		border-radius: 5px;
 		cursor: pointer;
 		min-width: 80px;
@@ -39,7 +39,7 @@ const LangBtn = styled.div`
 		padding: 0 10px;
 
 		span {
-			margin: 0 10px;
+			margin: 0 5px;
 		}
 	}
 
@@ -68,6 +68,10 @@ const LangBtn = styled.div`
 			visibility: visible;
 			opacity: 1;
 		}
+	}
+
+	@media (max-width: 992px) {
+		margin-right: 10px;
 	}
 `
 

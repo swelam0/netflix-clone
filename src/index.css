@@ -2,7 +2,19 @@
 
 :root {
 	--red: #e50914;
+	--black: #000000;
+	--gray: #8c8c8c;
 	--white: #fff;
+}
+
+*,
+*:hover,
+*:focus,
+*:focus-visible {
+	border: 0;
+	box-shadow: unset;
+	box-sizing: unset;
+	outline: unset;
 }
 
 body {
@@ -24,10 +36,21 @@ button {
 	min-height: 34px;
 	min-width: 80px;
 	text-transform: capitalize;
+	cursor: pointer;
 }
 
 ul {
 	list-style: none;
 	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+.h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
 }

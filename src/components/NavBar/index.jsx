@@ -43,6 +43,13 @@ const Nav = styled.div`
 		border-radius: 5px;
 		font-size: 16px;
 	}
+
+	@media (max-width: 992px) {
+		.loginBtn {
+			min-width: max-content;
+			padding: 0 10px;
+		}
+	}
 `
 
 const NavLogin = styled.div`

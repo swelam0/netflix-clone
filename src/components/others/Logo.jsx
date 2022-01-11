@@ -12,7 +12,7 @@ const Image = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	max-width: 133px;
+	width: 133px;
 
 	img {
 		width: 100%;

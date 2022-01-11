@@ -1,37 +1,25 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import FLexContainer from '../others/FlexContainer'
+import Container from '../others/Container'
 import Logo from '../others/Logo'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import Lang from './Lang'
 
 const NavBar = () => {
 	return (
 		<Nav>
-			<FLexContainer className='justify-between px-3.5 py-7'>
+			<Container>
 				<Link to='/'>
 					<Logo />
 				</Link>
 
 				<NavLogin>
-					<LangBtn>
-						<div>
-							<FontAwesomeIcon icon={faGlobe} size='sm' />
-							<span>English</span>
-						</div>
-						<ul>
-							<li>
-								<a>English</a>
-							</li>
-							<li>
-								<a>العربيه</a>
-							</li>
-						</ul>
-					</LangBtn>
+					<Lang />
 
-					<Link to='/login'>Login</Link>
+					<Link to='/login' className='loginBtn'>
+						sign in
+					</Link>
 				</NavLogin>
-			</FLexContainer>
+			</Container>
 		</Nav>
 	)
 }
@@ -41,16 +29,26 @@ const Nav = styled.div`
 	right: 0;
 	left: 0;
 	z-index: 999;
+
+	& > div {
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+
+	.loginBtn {
+		background-color: var(--red);
+		font-weight: 700;
+		border-radius: 5px;
+		font-size: 16px;
+	}
 `
 
 const NavLogin = styled.div`
 	display: flex;
+	align-items: center;
 	color: white;
-`
-
-const LangBtn = styled.div`
-	position: relative;
-	margin-right: 30px;
 `
 
 export default NavBar

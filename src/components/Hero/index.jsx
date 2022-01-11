@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import FLexContainer from '../others/FlexContainer'
+import Container from '../others/Container'
 
 const Hero = () => {
 	return (
 		<BgImg>
-			<FLexContainer className='relative z-20 py-24'>
+			<Container className='relative z-20 py-24'>
 				<h1 className='text-white'>Hero section</h1>
-			</FLexContainer>
+			</Container>
 		</BgImg>
 	)
 }

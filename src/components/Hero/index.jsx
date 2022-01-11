@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import tw from 'twin.macro'
 import FLexContainer from '../others/FlexContainer'
 
 const Hero = () => {
@@ -13,14 +12,12 @@ const Hero = () => {
 }
 
 const BgImg = styled.div`
-	${tw`
-		relative
-		min-h-screen
-		background-image[url('/images/bg.jpg')]
-		background-position[center]
-		background-repeat[no-repeat]
-		background-size[cover]
-	`}
+	position: relative;
+	min-height: 100vh;
+	background-image: url('/images/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	&::before {
 		content: '';
